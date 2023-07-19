@@ -48,3 +48,11 @@ def ceil_fundamental(num1):
 def floor_fundamental(num1):
     floor = math.floor(num1)
     return floor
+# 13. 최대공약수 구하기
+def gcd_fundamental(num1, num2):
+    gcd = math.gcd(num1, num2)
+    return gcd
+# 14. 최소공배수 구하기
+def lcm_fundamental(num1, num2):
+    lcm = num1 * num2 // math.gcd(num1, num2)
+    return lcm
