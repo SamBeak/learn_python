@@ -53,7 +53,7 @@ print(any(arr2))
 print(list(range(1, 10, 2)))
 # 19. enumerate (index와 value를 반환) 첫 parameter는 index, 두번째 parameter는 value (index, value) 형태로 반환 (default는 0부터 시작) 
 for index, value in enumerate(arr2):
-    print(index, value)
+    print(index, value) 
 # 20. filter (조건에 맞는 요소만 반환) 첫 parameter는 함수, 두번째 parameter는 배열 (함수의 조건에 맞는 요소만 반환)
 def over_3(value):
     return value > 3
@@ -67,7 +67,7 @@ arr3 = [6, 7, 8, 9, 10]
 print(list(zip(arr2, arr3))) # [(1, 6), (2, 7), (3, 8), (4, 9), (5, 10)]
 # 23. lambda (함수를 간단하게 표현) lambda key: value (key는 parameter, value는 return)
 print(list(map(lambda value: value * 2, arr2)))
-# 24. reduce (배열의 요소를 하나씩 함수에 적용하여 하나의 결과를 만듦)
+# 24. reduce (배열의 요소를 하나씩 함수에 적용하여 하나의 결과를 만듦) 첫 parameter는 함수, 두번째 parameter는 배열 (함수의 조건에 맞는 요소만 반환)
 from functools import reduce
 def sum_reduce(value1, value2):
     return value1 + value2
@@ -93,4 +93,4 @@ print(*set2)
 tup2 = (1, 2, 3)
 print(*tup2)
 # 33. set Array -> set(array) (배열을 셋으로 변환) 중복된 값은 하나만 남음, 중복 값 제거
-print(set(arr4)) 
+print(set(arr4))
