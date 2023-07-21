@@ -51,3 +51,46 @@ print(all(arr2))
 print(any(arr2))
 # 18. range (범위를 지정) 첫 parameter는 시작값, 두번째 parameter는 끝값, 세번째 parameter는 증가값
 print(list(range(1, 10, 2)))
+# 19. enumerate (index와 value를 반환) 첫 parameter는 index, 두번째 parameter는 value (index, value) 형태로 반환 (default는 0부터 시작) 
+for index, value in enumerate(arr2):
+    print(index, value)
+# 20. filter (조건에 맞는 요소만 반환) 첫 parameter는 함수, 두번째 parameter는 배열 (함수의 조건에 맞는 요소만 반환)
+def over_3(value):
+    return value > 3
+print(list(filter(over_3, arr2))) # [4, 5]
+# 21. map (요소를 변환) 첫 parameter는 함수, 두번째 parameter는 배열 (함수의 조건에 맞는 요소만 반환)
+def double(value):
+    return value * 2
+print(list(map(double, arr2)))
+# 22. zip (두 개의 배열을 합쳐서 반환) 첫 parameter는 배열, 두번째 parameter는 배열 (두 배열의 요소를 하나씩 묶어서 반환)
+arr3 = [6, 7, 8, 9, 10]
+print(list(zip(arr2, arr3))) # [(1, 6), (2, 7), (3, 8), (4, 9), (5, 10)]
+# 23. lambda (함수를 간단하게 표현) lambda key: value (key는 parameter, value는 return)
+print(list(map(lambda value: value * 2, arr2)))
+# 24. reduce (배열의 요소를 하나씩 함수에 적용하여 하나의 결과를 만듦)
+from functools import reduce
+def sum_reduce(value1, value2):
+    return value1 + value2
+print(reduce(sum_reduce, arr2))
+# 25. list comprehension (배열을 간단하게 표현)
+print([value * 2 for value in arr2])
+# 26. dictionary comprehension (딕셔너리를 간단하게 표현)
+print({key: value for key, value in dic1.items()})
+# 27. set comprehension (셋을 간단하게 표현)
+print({value * 2 for value in set1})
+# 28. tuple comprehension (튜플을 간단하게 표현)
+print(tuple(value * 2 for value in tup1))
+# 29. list unpacking (배열을 간단하게 표현)
+arr4 = [1, 2, 3]
+print(*arr4)
+# 30. dictionary unpacking (딕셔너리를 간단하게 표현)
+dic2 = {'a': 1, 'b': 2, 'c': 3}
+print(*dic2)
+# 31. set unpacking (셋을 간단하게 표현)
+set2 = {1, 2, 3}
+print(*set2)
+# 32. tuple unpacking (튜플을 간단하게 표현)
+tup2 = (1, 2, 3)
+print(*tup2)
+# 33. set Array -> set(array) (배열을 셋으로 변환) 중복된 값은 하나만 남음, 중복 값 제거
+print(set(arr4)) 
