@@ -59,3 +59,7 @@ my_string = ""
 for i in range(10):
     my_string += str(i)
 print(my_string) # 0123456789
+# 29. 숫자를 영문자로 변환
+print(chr(65)) # A
+# 30. 영문자를 숫자로 변환
+print(ord("A")) # 65
