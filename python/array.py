@@ -85,7 +85,7 @@ arr4 = [1, 2, 3, 3, 3]
 print(*arr4)
 # 30. dictionary unpacking (딕셔너리를 간단하게 표현)
 dic2 = {'a': 1, 'b': 2, 'c': 3}
-print(*dic2)
+print(*dic2) # a b c
 # 31. set unpacking (셋을 간단하게 표현)
 set2 = {1, 2, 3}
 print(*set2)
@@ -94,3 +94,7 @@ tup2 = (1, 2, 3)
 print(*tup2)
 # 33. set Array -> set(array) (배열을 셋으로 변환) 중복된 값은 하나만 남음, 중복 값 제거
 print(set(arr4)) # {1, 2, 3}
+# 34. dictionary에서 해당 문자 찾기
+print(dic1['a']) # 1
+# 35. dictionary에서 해당 문자가 없으면 에러가 나지 않고 None을 반환
+print(dic1.get('f')) # None

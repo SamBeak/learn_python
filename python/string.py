@@ -1,4 +1,3 @@
-# 문자열 메서드
 my_string = "hello world"
 # 1. capitalize (첫 글자를 대문자로 변환)
 print(my_string.capitalize()) # Hello world

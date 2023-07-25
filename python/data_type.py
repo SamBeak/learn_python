@@ -6,3 +6,7 @@ print(str(1)) # 1
 print(list("hello")) # ['h', 'e', 'l', 'l', 'o']
 # 리스트를 문자열로 변환
 print("".join(["h", "e", "l", "l", "o"])) # hello
+# 정수판별
+def integer_fundamental(num1):
+    integer = num1.is_integer()
+    return integer

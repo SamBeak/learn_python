@@ -56,3 +56,23 @@ def gcd_fundamental(num1, num2):
 def lcm_fundamental(num1, num2):
     lcm = num1 * num2 // math.gcd(num1, num2)
     return lcm
+# 15. 컴비네이션
+def combination_fundamental(num1, num2):
+    combination = math.comb(num1, num2)
+    return combination
+# 16. 팩토리얼
+def factorial_fundamental(num1):
+    factorial = math.factorial(num1)
+    return factorial
+# 17. 로그
+def log_fundamental(num1, num2):
+    log = math.log(num1, num2)
+    return log
+# 18. 제곱근
+def sqrt_fundamental(num1):
+    sqrt = math.sqrt(num1)
+    return sqrt
+# 19. 루트
+def root_fundamental(num1, num2):
+    root = num1 ** (1 / num2)
+    return root
