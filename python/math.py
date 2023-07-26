@@ -76,3 +76,46 @@ def sqrt_fundamental(num1):
 def root_fundamental(num1, num2):
     root = num1 ** (1 / num2)
     return root
+# 20. 약수 구하기
+def divisor_fundamental(num1):
+    divisor = []
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            divisor.append(i)
+    return divisor
+# 21. 소수 구하기
+def prime_number_fundamental(num1):
+    prime_number = []
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            prime_number.append(i)
+    if len(prime_number) == 2:
+        return True
+    else:
+        return False
+# 22. 약수 개수 구하기
+def divisor_count_fundamental(num1):
+    divisor_count = 0
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            divisor_count += 1
+    return divisor_count
+# 23. 소수 개수 구하기
+def prime_number_count_fundamental(num1):
+    prime_number_count = 0
+    for i in range(1, num1 + 1):
+        if num1 % i == 0:
+            prime_number_count += 1
+    if prime_number_count == 2:
+        return True
+    else:
+        return False
+# 24. 소인수분해
+def prime_factorization_fundamental(num1):
+    prime_factorization = []
+    for i in range(2, num1 + 1):
+        if num1 % i == 0:
+            prime_factorization.append(i)
+            num1 = num1 // i
+            i = 1
+    return prime_factorization
