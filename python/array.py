@@ -28,6 +28,15 @@ print(arr1.count(5))
 # 8. sort (정렬) parameter로 reverse=True를 넣으면 내림차순으로 정렬 가능 (default는 오름차순)
 arr1.sort()
 print(arr1)
+# sorted (정렬) parameter로 reverse=True를 넣으면 내림차순으로 정렬 가능 (default는 오름차순)
+print(sorted(arr1))
+# sort()와 sorted는 똑같이 정렬을 하지만 하나는 파괴적 하나는 비파괴적이다.
+# 중복제거 (set을 이용)
+print(list(set(arr1)))
+# 중복제거 (dictionary를 이용)
+print(list(dict.fromkeys(arr1)))
+# 중복제거 (list comprehension을 이용)
+print([value for index, value in enumerate(arr1) if value not in arr1[:index]])
 # 9. reverse (배열을 역순으로 정렬) parameter로 reverse=True를 넣으면 내림차순으로 정렬 가능 (default는 오름차순)
 arr1.reverse()
 print(arr1)
@@ -98,3 +107,6 @@ print(set(arr4)) # {1, 2, 3}
 print(dic1['a']) # 1
 # 35. dictionary에서 해당 문자가 없으면 에러가 나지 않고 None을 반환
 print(dic1.get('f')) # None
+# 중복 제거
+# 36. set (중복된 값을 제거)
+print(set(arr4)) # {1, 2, 3}

@@ -17,7 +17,7 @@ print(my_string.lstrip()) # hello world
 print(my_string.rstrip()) # hello world
 # 9. replace (문자열을 치환) 첫 parameter는 문자열, 두번째 parameter는 치환할 문자열 (치환할 문자열을 치환)
 print(my_string.replace("hello", "hi")) # hi world
-# 10. split (문자열을 나누어 배열로 반환) 첫 parameter는 구분자 (구분자로 문자열을 나누어 배열로 반환)
+# 10. split (문자열을 나누어 배열로 반환) 첫 parameter는 구분자 (구분자로 문자열을 나누어 배열로 반환) default는 공백
 print(my_string.split()) # ['hello', 'world']
 # 11. join (배열을 문자열로 변환) 첫 parameter는 배열, 두번째 parameter는 구분자 (배열의 요소를 구분자로 합쳐서 문자열로 반환)
 print(" ".join(my_string)) # h e l l o   w o r l d
