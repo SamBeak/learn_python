@@ -119,3 +119,15 @@ def prime_factorization_fundamental(num1):
             num1 = num1 // i
             i = 1
     return prime_factorization
+# 25. 이진수 변환
+def binary_fundamental(num1):
+    binary = bin(num1)
+    return binary
+# 26. 8진수 변환
+def octal_fundamental(num1):
+    octal = oct(num1)
+    return octal
+# 27. 16진수 변환
+def hexadecimal_fundamental(num1):
+    hexadecimal = hex(num1)
+    return hexadecimal
