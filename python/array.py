@@ -30,7 +30,7 @@ arr1.sort()
 print(arr1)
 # sorted (정렬) parameter로 reverse=True를 넣으면 내림차순으로 정렬 가능 (default는 오름차순)
 print(sorted(arr1))
-# sort()와 sorted는 똑같이 정렬을 하지만 하나는 파괴적 하나는 비파괴적이다.
+# sort()와 sorted는 똑같이 정렬을 하지만 하나는 파괴적 하나는 비파괴적이다. 파괴적은 원본을 바꾸고 비파괴적은 원본을 바꾸지 않는다. sort가 파괴적이고 sorted가 비파괴적이다.
 # 중복제거 (set을 이용)
 print(list(set(arr1)))
 # 중복제거 (dictionary를 이용)
